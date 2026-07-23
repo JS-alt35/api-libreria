@@ -38,7 +38,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: 100.54.203.189
-          username: ec2-user
+          username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo docker pull rrider01/api-libreria-aws:latest
